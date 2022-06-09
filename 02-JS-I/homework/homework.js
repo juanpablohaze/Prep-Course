@@ -1,7 +1,9 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "HELLO";
+const nuevaString = 'Juan Pablo';
+
+
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 4;
@@ -28,12 +30,9 @@ const nuevoModulo = 21 % 5 === 0;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  console.log(`String: ${str}`);
-
+  var string = str
+return string ;
 }
-var str = "str" ;
-
-    devolverString(str);
 
 
 function suma(x, y) {
@@ -45,7 +44,7 @@ function suma(x, y) {
     return resultado ;
   }
   
-  console.log("LA SUMA ES : ", suma(5,50));
+ 
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
@@ -54,7 +53,7 @@ function resta(x, y) {
   return resultadoresta ;
 
 }
-console.log("LA RESTA ES : " ,resta(20,5));
+
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
@@ -63,7 +62,7 @@ function multiplica(x, y) {
   return resultadomultiplica;
   
 }
-console.log("EL RESULTADO ES :  ", multiplica(2,3));
+
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
@@ -73,7 +72,7 @@ function divide(x, y) {
   return numerodiv;
   
 }
-console.log("EL RESULTADO ES : ",divide(90,2));
+
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
@@ -83,8 +82,7 @@ function sonIguales(x, y) {
     return true;
   } else { return false ;} 
 }
-var  resultado = sonIguales(2,2);
-console.log(" SON IGUALES ? :",resultado);
+
 
 
 function tienenMismaLongitud(str1, str2) {
@@ -102,7 +100,6 @@ function tienenMismaLongitud(str1, str2) {
   
 }
 
-console.log( "TIENEN LA MISMA LONGITUD ? : ", tienenMismaLongitud("hola","holaa"));
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -113,7 +110,7 @@ function menosQueNoventa(num) {
 
   
 }
-console.log("ES MENOS QUE NOVENTA ? ",menosQueNoventa(100));
+
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
@@ -121,7 +118,7 @@ function mayorQueCincuenta(num) {
   if(num>50){ return true} else{ return false}
 }
 
-console.log( "ES MAYOR QUE CINCUENTA ?", mayorQueCincuenta(49));
+
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -133,7 +130,7 @@ return resto;
 
 }
 
-console.log("EL RESTO ES ;",obtenerResto(25,5));
+
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
@@ -145,7 +142,7 @@ if (resto === 0){return true}else{return false}
 
 }
 
-console.log( "ES PAR ? : ", esPar(0));
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
@@ -155,7 +152,7 @@ function esImpar(num) {
   if (resto !== 0){return true}else{return false}
 
 }
-console.log("ES IMPAR ? :" , esImpar(23) );
+
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -167,7 +164,7 @@ return cuadrado;
   
 }
 
-console.log("EL NUMERO ELEVADO AL CUADRADO ES : ",elevarAlCuadrado(22));
+
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
@@ -176,7 +173,7 @@ function elevarAlCubo(num) {
 
   return cubo;
 }
-console.log("EL NUMERO AL CUBO ES :", elevarAlCubo(13));
+
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
@@ -186,7 +183,7 @@ function elevar(num, exponent) {
   return resultado;
 
 }
-console.log("ELEVAR POTENCIA : ", elevar(2,3) );
+
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
@@ -196,7 +193,7 @@ function redondearNumero(num) {
 
 }
 
-console.log( "EL NUMERO REDONDEADO ES :", redondearNumero(22.50));
+
 
 
 function redondearHaciaArriba(num) {
@@ -209,7 +206,7 @@ function redondearHaciaArriba(num) {
 
 }
 
-console.log("EL NUMERO REDONDEADO HACIA ARRIBA ES: ",redondearHaciaArriba(6.1));
+
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
@@ -219,7 +216,6 @@ function numeroRandom() {
 return numero;
 }
 
-console.log(numeroRandom());
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -227,14 +223,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-var retorno = Math.sign(numero);
 
 
-
-
-
-if(retorno === 1){return "Es positivo"}else if (retorno === -1){return "Es negativo"}
- if (retorno === 0){return "ES CERO"} 
+if (numero>0){return "Es positivo"}else if(numero<0){return "Es negativo"} else if (numero ==0){return false}
 
 
 
@@ -242,8 +233,6 @@ if(retorno === 1){return "Es positivo"}else if (retorno === -1){return "Es negat
 
 
 }
-
-console.log("EL NUMERO ES POSITIVO ?",esPositivo(10));
 
 
 function agregarSimboloExclamacion(str) {
@@ -251,13 +240,13 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 
-var  strplus = str +"!!";
+var  strplus = str +"!";
 
 return strplus;
 
 
 }
-console.log(agregarSimboloExclamacion("HOLA"));
+
 
 
 function combinarNombres(nombre, apellido) {
@@ -271,7 +260,7 @@ function combinarNombres(nombre, apellido) {
 
 }
 
-console.log(combinarNombres("Juan Pablo", "Roberto"));
+
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -283,7 +272,7 @@ function obtenerSaludo(nombre) {
 
 }
 
-console.log(obtenerSaludo("Juan Pablo")); 
+
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
@@ -293,7 +282,7 @@ function obtenerAreaRectangulo(alto, ancho) {
  return area;
 }
 
-console.log("El area del rectangulo es :", obtenerAreaRectangulo(5,7));
+
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
@@ -305,7 +294,7 @@ function retornarPerimetro(lado){
  return perimetro ;
 }
 
-console.log("El perimetro del cuadrado es :", retornarPerimetro(2));
+
 
 
 
@@ -321,7 +310,7 @@ function areaDelTriangulo(base, altura){
 
 }
 
-console.log("El area del triangulo es :",areaDelTriangulo(5,2), "cm2");
+
 
 
 function deEuroAdolar(euro){
@@ -339,7 +328,6 @@ function deEuroAdolar(euro){
   
 }
 
-console.log("EUR a USD $",deEuroAdolar(2));
 
 
 function esVocal(letra){
@@ -348,8 +336,33 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+
+  switch (letra){
+case "A": return "Es vocal"
+break;
+case "E" :return "Es vocal"
+break; 
+
+case "I" :return "Es vocal"
+
+break;
+
+case "O" : return "Es vocal"
+
+break;
+
+case "U": return "Es vocal "
+
+break ;
+
+default : return "Dato Incorrecto"
+
+break;
+  }
   
 }
+
+
 
 
 
